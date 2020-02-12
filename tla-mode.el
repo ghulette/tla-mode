@@ -383,11 +383,11 @@
   (setq-local comment-start "(*")
   (setq-local comment-end "*)")
   (electric-indent-local-mode -1)
-  (setq-local prettify-symbols-alist tla-symbols-alist)
+;;  (setq-local prettify-symbols-alist tla-symbols-alist)
   (setq-local indent-tabs-mode nil)
   ;; Debugging args fail with starter kit.
-  (add-hook 'after-change-functions 'tla-fixcase-keywords t t)
-  (prettify-symbols-mode)
+;;  (add-hook 'after-change-functions 'tla-fixcase-keywords t t)
+;;  (prettify-symbols-mode)
   (when (and tla-template-by-default
 	     (= (point-max) 1))
     (tla-template))
